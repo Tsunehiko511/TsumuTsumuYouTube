@@ -10,10 +10,6 @@ public class BallGenerator : MonoBehaviour
     // ・設定する画像を用意
     [SerializeField] Sprite[] ballSprites = default;
 
-    private void Start()
-    {
-        StartCoroutine(Spawns(40));
-    }
 
     public IEnumerator Spawns(int count)
     {
